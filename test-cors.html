@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Teste CORS - SubFlow</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      max-width: 800px;
+      margin: 50px auto;
+      padding: 20px;
+      background: #f5f5f5;
+    }
+    .container {
+      background: white;
+      padding: 30px;
+      border-radius: 8px;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    }
+    h1 {
+      color: #333;
+      margin-bottom: 20px;
+    }
+    button {
+      background: #007bff;
+      color: white;
+      border: none;
+      padding: 12px 24px;
+      border-radius: 4px;
+      cursor: pointer;
+      font-size: 16px;
+      margin-right: 10px;
+    }
+    button:hover {
+      background: #0056b3;
+    }
+    #result {
+      margin-top: 20px;
+      padding: 15px;
+      border-radius: 4px;
+      background: #f8f9fa;
+      white-space: pre-wrap;
+      font-family: monospace;
+    }
+    .success {
+      border-left: 4px solid #28a745;
+    }
+    .error {
+      border-left: 4px solid #dc3545;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>🧪 Teste CORS - SubFlow API</h1>
+    <p>Clique no botão para testar a requisição CORS:</p>
+    
+    <button onclick="testCors()">Testar CORS</button>
+    <button onclick="clearResult()">Limpar</button>
+    
+    <div id="result"></div>
+  </div>
+
+  <script>
+    async function testCors() {
+      const resultDiv = document.getElementById('result');
+      resultDiv.textContent = 'Testando...';
+      resultDiv.className = '';
+      
+      try {
+        const response = await fetch('http://localhost:3000/', {
+          method: 'GET',
+          headers: {
+            'Content-Type': 'application/json',
+          },
+        });
+        
+        const data = await response.json();
+        
+        resultDiv.className = 'success';
+        resultDiv.textContent = `✅ CORS funcionando!\n\nStatus: ${response.status}\nResposta: ${JSON.stringify(data, null, 2)}`;
+      } catch (error) {
+        resultDiv.className = 'error';
+        resultDiv.textContent = `❌ Erro CORS:\n\n${error.message}`;
+      }
+    }
+    
+    function clearResult() {
+      document.getElementById('result').textContent = '';
+      document.getElementById('result').className = '';
+    }
+  </script>
+</body>
+</html>
