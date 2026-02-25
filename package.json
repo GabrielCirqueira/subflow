@@ -1,7 +1,7 @@
 {
-  "name": "nodejs-backend-skeleton",
+  "name": "subflow",
   "version": "1.0.0",
-  "description": "Professional Node.js + TypeScript backend skeleton/template",
+  "description": "Sistema de Gestão de Assinaturas Pessoais - SubFlow",
   "main": "dist/main.js",
   "scripts": {
     "dev": "ts-node-dev --respawn --transpile-only src/main.ts",
@@ -17,8 +17,8 @@
     "nodejs",
     "typescript",
     "express",
-    "skeleton",
-    "template",
+    "subflow",
+    "subscriptions",
     "backend",
     "api",
     "rest"

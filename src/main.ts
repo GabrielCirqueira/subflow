@@ -20,7 +20,7 @@ app.use(express.urlencoded({ extended: true }));
 
 app.get("/", (_req, res) => {
   res.json({
-    message: "Node.js Backend Skeleton API 🚀",
+    message: "SubFlow API 🚀",
     version: "1.0.0",
     environment: process.env.NODE_ENV || "development",
     timestamp: moment().format("YYYY-MM-DD HH:mm:ss"),
@@ -41,7 +41,7 @@ const PORT = process.env.PORT || 3000;
 app.listen(PORT, () => {
   console.log(`
 ╔════════════════════════════════════════════╗
-║   🚀 Node.js Backend Skeleton              ║
+║   🚀 SubFlow                               ║
 ║   Port: ${PORT}                            ║
 ║   Environment: ${process.env.NODE_ENV || "development"}            ║
 ║   Timezone: ${process.env.TZ || "America/Sao_Paulo"}   ║

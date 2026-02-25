@@ -10,7 +10,7 @@ BLUE='\033[0;34m'
 NC='\033[0m'
 
 echo -e "${CYAN}════════════════════════════════════════════════${NC}"
-echo -e "${CYAN}  📚 Guia de Comandos - Node.js Backend Skeleton${NC}"
+echo -e "${CYAN}  📚 Guia de Comandos - SubFlow${NC}"
 echo -e "${CYAN}════════════════════════════════════════════════${NC}"
 echo ""
 

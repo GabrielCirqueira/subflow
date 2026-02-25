@@ -1,6 +1,6 @@
-# 🏗️ Node.js Backend Skeleton
+# 🏗️ SubFlow
 
-> Template/Skeleton profissional para iniciar projetos backend com Node.js + TypeScript + Express
+> Sistema de Gestão de Assinaturas Pessoais
 
 [![Node.js](https://img.shields.io/badge/Node.js-20+-green.svg)](https://nodejs.org/)
 [![TypeScript](https://img.shields.io/badge/TypeScript-5.9-blue.svg)](https://www.typescriptlang.org/)
@@ -11,22 +11,22 @@
 
 ## 📖 Sobre
 
-Este é um **skeleton/template profissional** pronto para ser clonado e usado como base para novos projetos backend em Node.js. Ele já vem com toda a estrutura, configurações e boas práticas implementadas, permitindo que você **foque apenas na lógica de negócio** do seu projeto.
+Este é um **sistema profissional** para controle de assinaturas como Netflix, Spotify, AWS etc., com cálculo de gastos e alertas de vencimento. Ele já vem com toda a estrutura, configurações e boas práticas implementadas, permitindo que você **foque apenas na lógica de negócio** do seu projeto.
 
-**✨ Perfeito para:** APIs REST, microserviços, backends de aplicações web/mobile, sistemas corporativos.
+**✨ Perfeito para:** Controle de assinaturas recorrentes, gestão financeira pessoal, automação de pagamentos.
 
 ---
 
-## 🎯 Por que usar este skeleton?
+## 🎯 Por que usar este subflow?
 
-❌ **Sem este skeleton:**
+❌ **Sem este subflow:**
 - Configurar TypeScript, linter, formatter
 - Setup de validação, erros, CORS, timezone
 - Estruturar pastas e arquivos
 - Configurar ambientes, Docker, commits semânticos
 - 2-3 dias de setup inicial...
 
-✅ **Com este skeleton:**
+✅ **Com este subflow:**
 - `git clone` + `npm install`
 - Renomear projeto
 - **Começar a codificar em minutos!** 🚀
@@ -95,12 +95,12 @@ src/
 
 ---
 
-## 🚀 Como usar este skeleton
+## 🚀 Como usar este subflow
 
 ### 1️⃣ Clone o repositório
 
 ```bash
-git clone https://github.com/GabrielCirqueira/nodejs-backend-skeleton.git meu-novo-projeto
+git clone https://github.com/GabrielCirqueira/subflow.git meu-novo-projeto
 cd meu-novo-projeto
 ```
 
@@ -110,7 +110,7 @@ cd meu-novo-projeto
 rm -rf .git
 git init
 git add .
-git commit -m "feat: initial commit from skeleton"
+git commit -m "feat: initial commit from subflow"
 ```
 
 ### 3️⃣ Personalize o projeto
@@ -361,7 +361,6 @@ Todos os erros são capturados e formatados automaticamente.
 - [`API_EXAMPLES.md`](API_EXAMPLES.md) - Exemplos de uso da API
 - [`QUICK_START.md`](QUICK_START.md) - Guia rápido de teste
 - [`CLI_DOCUMENTATION.md`](CLI_DOCUMENTATION.md) - Documentação dos scripts CLI
-- [`SKELETON_USAGE.md`](SKELETON_USAGE.md) - Como usar este skeleton
 - [`commitlint.config.js`](commitlint.config.js) - Configuração de commits
 
 ---
@@ -383,7 +382,7 @@ docker compose down
 
 ## 🤝 Contribuindo
 
-Este skeleton é open source! Melhorias são bem-vindas:
+Este subflow é open source! Melhorias são bem-vindas:
 
 1. Fork o projeto
 2. Crie uma branch (`git checkout -b feature/amazing`)
@@ -403,7 +402,7 @@ Veja o arquivo [LICENSE](LICENSE) para mais detalhes.
 
 ## 🎁 Créditos
 
-Skeleton criado por [Gabriel Cirqueira](https://github.com/GabrielCirqueira) com ❤️ para acelerar o desenvolvimento de projetos Node.js.
+SubFlow criado por [Gabriel Cirqueira](https://github.com/GabrielCirqueira) com ❤️ para acelerar o desenvolvimento de projetos Node.js.
 
 **Stack:** Node.js, TypeScript, Express, Sequelize, Zod, Biome, Docker
 
@@ -423,6 +422,6 @@ Skeleton criado por [Gabriel Cirqueira](https://github.com/GabrielCirqueira) com
 
 **⚡ Comece a desenvolver em minutos, não em dias!**
 
-Para dúvidas ou sugestões, abra uma [issue](https://github.com/GabrielCirqueira/nodejs-backend-skeleton/issues).
+Para dúvidas ou sugestões, abra uma [issue](https://github.com/GabrielCirqueira/subflow/issues).
 
 **GitHub:** https://github.com/GabrielCirqueira

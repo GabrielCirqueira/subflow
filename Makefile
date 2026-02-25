@@ -8,7 +8,7 @@ NC     := \033[0m # No Color
 
 help: ## Mostra este help
 	@echo "${CYAN}════════════════════════════════════════════════${NC}"
-	@echo "${CYAN}  🚀 Node.js Backend Skeleton - Makefile${NC}"
+	@echo "${CYAN}  🚀 SubFlow - Makefile${NC}"
 	@echo "${CYAN}════════════════════════════════════════════════${NC}"
 	@echo ""
 	@grep -E '^[a-zA-Z_-]+:.*?## .*$$' $(MAKEFILE_LIST) | sort | awk 'BEGIN {FS = ":.*?## "}; {printf "${GREEN}%-20s${NC} %s\n", $$1, $$2}'
